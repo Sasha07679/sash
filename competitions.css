@@ -1,0 +1,126 @@
+/* ===== GLOBAL ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: white;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* ===== NAVIGATION ===== */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #162d6b;
+}
+
+/* ===== COMPETITIONS ===== */
+.competitions {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.competition-card {
+    background-color: white;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.competition-card:hover {
+    transform: translateY(-5px);
+}
+
+.competition-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.competition-card h2 {
+    color: #1e3a8a;
+    margin: 15px 0 10px 0;
+}
+
+.competition-card p {
+    padding: 0 15px 20px 15px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 768px) {
+    .competitions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}

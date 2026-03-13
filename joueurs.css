@@ -1,0 +1,129 @@
+/* ===== HEADER ===== */
+
+header{
+    background: linear-gradient(135deg,#1e3a8a,#162d6b);
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+header h1{
+    font-size:38px;
+    letter-spacing:1px;
+    margin-bottom:20px;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+
+/* ligne décorative sous le titre */
+
+header h1::after{
+    content:"";
+    display:block;
+    width:90px;
+    height:4px;
+    background:white;
+    margin:12px auto;
+    border-radius:5px;
+}
+
+
+/* ===== NAVIGATION ===== */
+
+nav{
+    background-color:#2d51ad;
+    padding:10px 0;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:500;
+    padding:8px 10px;
+    position:relative;
+    transition:0.3s;
+}
+
+/* effet ligne animée */
+
+nav ul li a::after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:3px;
+    background:#1e3a8a;
+    left:0;
+    bottom:-5px;
+    transition:0.3s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+
+/* effet hover */
+
+nav ul li a:hover{
+    color:#4f7cff;
+}
+/* ===== SECTION JOUEURS ===== */
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    width: 100%;
+}
+
+/* ===== CARTES ===== */
+
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+/* ===== IMAGES ===== */
+
+.card img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ===== TITRES ===== */
+
+.card h2{
+    margin: 15px 0 10px 0;
+    color:#1e3a8a;
+    font-size: 22px;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
